@@ -1,4 +1,4 @@
-package Lab4;
+package Lab3;
 
 public abstract class Sorter {
     long timeStart;
