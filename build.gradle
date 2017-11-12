@@ -18,12 +18,3 @@ apply plugin: 'java'
 dependencies {
     testCompile 'junit:junit:4.12'
 }
-
-apply plugin: 'jacoco'
-
-jacocoTestReport {
-    reports {
-        xml.enabled true
-        html.enabled false
-    }
-}
