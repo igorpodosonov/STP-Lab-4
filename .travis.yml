@@ -10,4 +10,8 @@ before_install:
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
+<<<<<<< HEAD
   - java -cp ~/codacy-coverage-reporter-assembly-latest.jar com.codacy.CodacyCoverageReporter -l Java -r jacoco.xml
+=======
+  - java -cp ~/codacy-coverage-reporter-assembly-latest.jar com.codacy.CodacyCoverageReporter -l Java -r jacoco.xml
+>>>>>>> origin/master
