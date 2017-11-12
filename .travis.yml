@@ -5,4 +5,9 @@ jdk:
   - oraclejdk9
 
 after_success:
+  - sbt coverageReport
+  - sbt coverageAggregate
+  - sbt codacyCoverage
+
+after_success:
   - bash <(curl -s https://codecov.io/bash)
