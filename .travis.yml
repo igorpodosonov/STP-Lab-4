@@ -11,3 +11,4 @@ after_success:
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
+  - java -cp codacy-coverage-reporter-assembly-<version>.jar com.codacy.CodacyCoverageReporter -l Java -r jacoco.xml
