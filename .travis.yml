@@ -10,4 +10,4 @@ before_install:
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
-  - java -cp ~/codacy-coverage-reporter-assembly-latest.jar com.codacy.CodacyCoverageReporter CODACY_PROJECT_TOKEN=d5af6dd108de4875b93c001a05f63a4e -l Java -r jacoco.xml
+  - java -cp ~/codacy-coverage-reporter-assembly-latest.jar com.codacy.CodacyCoverageReporter -l Java -r jacoco.xml
